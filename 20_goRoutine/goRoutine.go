@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-// Go routines are lightweight threads managed by the Go runtime. They allow concurrent execution of functions, enabling efficient multitasking within a Go program. To create a goroutine, you use the `go` keyword followed by a function call. This starts the function in a new goroutine, allowing it to run concurrently with other goroutines.
+// Go routines are lightweight threads managed by the Go runtime. They allow concurrent execution of functions, enabling efficient multitasking within a Go program. To create a goroutine, you use the `go` keyword followed by a function call. This starts the function in a new goroutine, allowing it to run concurrently with other goroutines.k
 
 func displayNum(num int, wg *sync.WaitGroup) {
 	//Here we use defer so the wg.done will be executed after the function is executed
